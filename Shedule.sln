@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shedule", "Shedule\Shedule.csproj", "{C57A1DBE-7939-41B5-8FF0-93E2A7EB560B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SheduleData", "Shedule\SheduleData.csproj", "{C57A1DBE-7939-41B5-8FF0-93E2A7EB560B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

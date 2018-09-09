@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Shedule.Data</AssemblyName>
+    <RootNamespace>Shedule.Data</RootNamespace>
   </PropertyGroup>
 
 </Project>
