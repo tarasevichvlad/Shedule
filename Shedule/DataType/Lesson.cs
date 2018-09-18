@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Shedule.DataType
+namespace SheduleData.DataType
 {
     class Lesson
     {
         int Number { get; set; }
-        Subject Subject { get; set; }
+        public Subject Subject { get; private set; }
         Teacher Teacher { get; set; }
         Cabinet Cabinet { get; set; } 
+
     }
 }

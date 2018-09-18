@@ -2,14 +2,27 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Shedule.DataType
+namespace SheduleData.DataType
 {
     class Teacher
     {
-        string Name { get; set; }
-        string Surname { get; set; }
-        string Patronymic { get; set; }
-        Subject Subject { get; set; }
-        List<Class> Classes { get; set; }
+        public Teacher(string name, string surname, string patronymic, Subject subject)
+        {
+            Name = name;
+            Surname = surname;
+            Patronymic = patronymic;
+            Subject = subject;
+        }
+
+        string Name { get; }
+        string Surname { get;  }
+        string Patronymic { get; }
+        Subject Subject { get; }
+
+        List<Class> classes { get; } = new List<Class>();
+
+        public void AddClass(Class _class) => classes.Add(_class);
+
+        public void RemoveClass(Class _class) => classes.Remove(_class);
     }
 }

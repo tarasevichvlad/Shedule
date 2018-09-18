@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Shedule.DataType
+namespace SheduleData.DataType
 {
     class Week
     {
-        List<Day> Days { get; set; }
-        int NumberAcademicWeek { get; set; }
+        public Week(int numberAcademicWeek)
+        {
+            NumberAcademicWeek = numberAcademicWeek;
+        }
+        List<Day> Days { get; } = new List<Day>();
+        int NumberAcademicWeek { get; }
+        public void AddDay(Day day) => Days.Add(day);
+        public void RemoveDay(Day day) => Days.Remove(day);
     }
 }

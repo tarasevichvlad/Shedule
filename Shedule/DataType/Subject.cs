@@ -1,11 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace Shedule
+namespace SheduleData
 {
     public class Subject
     {
-        private string Name { get; set; }
-        private int Complexity { get; set; }
-        private dynamic Adjacency { get; set; }
+        string Name { get; set; }
+        public int Complexity { get; private set; }
+
+        List<Subject> Adjacency = new List<Subject>();
+
+        public void AddAdjacency(Subject subject) => Adjacency.Add(subject);
+        public void RemoveAdjacency(Subject subject) => Adjacency.Remove(subject);
     }
+
 }

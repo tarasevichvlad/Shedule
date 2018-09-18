@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Shedule.DataType
+namespace SheduleData.DataType
 {
     class Replacement
     {
